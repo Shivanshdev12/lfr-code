@@ -21,6 +21,10 @@ void setup()
 
 void loop()
 {
+  analogWrite(LM1,255);
+  analogWrite(LM2,0);
+  analogWrite(RM1,255);
+  analogWrite(RM2,0);
   if(digitalRead(ir1) && digitalRead(ir2))     // Move Forward
   {
     digitalWrite(LM1, HIGH);
